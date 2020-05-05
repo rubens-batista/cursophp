@@ -1,0 +1,11 @@
+Tipos{
+    //OBS: O PHP NÃO PRECISA FORÇAR O TIPO, ELE FAZ ISSO AUTOMATICAMENTE
+
+    Inteiros: (int), (integer)
+    Real: (real), (float), (double)
+    Caractere: (string)
+    Lógico:{
+        true = 1
+        false = vazio
+    }
+}

@@ -1,0 +1,38 @@
+Operadores aritimeticos{
+    adição +;
+    subtração -;
+    multiplicação *;
+    divisão /;
+    modulo %;
+
+    #Ordem de precedencia;
+
+    1- ();
+    2- * / % // Quem vim primeiro;
+    3- + - // Quem vim primeiro;
+
+    #Funcões matematicas;
+
+    abs() Valor absoluto{
+        example: echo "O valor absoluto de $v2 é ". abs($v2);
+    };
+    pow() Potenciação{
+        example: echo "<br>O valor de $v1<sup>$v2</sup> é ". pow($v1, $v2);
+    };
+    sqrt() Raiz quadrada{
+        example: echo "<br>A raiz de $v1 é ". sqrt($v1);
+    };
+    round() arredondamento{
+        example: echo "<br>O valor de $v2 arredondado é ". round($v2); 
+        // ceil sempre arredonda para cima 3.2 = 4;
+        // floor sempre arredonda para baixo - 3.9 = 3;
+    };
+    intval() Valor inteiro da variável{
+        example: echo "<br>A parte inteira de $v2 é ". intval($v2);
+        //$v2 sendo 3.9999 ele só pega a parte inteira = 3
+    };
+    number_format() Formatação{
+        example: echo "<br>O valor de $v1 em moeda é R$". number_format($v1, 2, ",", ".");
+        //number_format(primeiro o parametro formatado, quantidade de casas decimais, pode formatar o sinal de separação decimal, pode formatar o sinal de separação de milhar);
+    };
+};
