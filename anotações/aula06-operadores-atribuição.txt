@@ -1,0 +1,45 @@
+Operadores de Atribuição{
+    example:{
+        $a = 1;
+        $b = 3;
+        $c = $a + $b
+        $c = $c + 5; = $c += 5;
+        $b = $b + $a; = $b += $a;
+        $a = $a + 1; = $a += 1; = $a++
+    };
+    adição: $a = $a + $b // $a += $b
+    subtração: $a = $a - $b // $a -= $b
+    multiplicação: $a = $a * $b // $a *= $b
+    divisão: $a = $a / $b // $a /= $b
+    modulo: $a = $a % $b // $a %= $b
+    concatenação: $a = $a . $b // $a .= $b
+
+    Operadores de Incremento{
+        pré-incremento: $a = $a + 1 // ++$a
+        pós-incremento: $a = $a + 1 // $a++
+        pré-decremento: $a = $a - 1 // --$a
+        pós-decremento: $a = $a - 1 // $a--
+    };
+
+    Variáveis Referenciadas{
+        example:{
+            $a = 3; // $a = 3;
+            $b = $a; // $b = &$a; #$b vai referenciar(ligando) o valor de $a 
+            $b += 5; // $b += 5; #$b = 3 + 5 = 8, como $b está ligado a $a, então $a recebe = 8
+            echo $a; = 3 // echo $a; = 8
+            echo $b; = 8 // echo $b; = 8
+        }
+    }
+    Variáveis de Variáveis{
+        example:{
+            $site = "cursoemvideo";
+            $$site = "cursoPHP"; // $ antes de variaveis, vai criar uma variavel variante
+            /* 
+                usar $ antes de variaveis, faz com que crie-se uma variavel,
+                e o nome dela será o conteudo dentro da primeira variavel
+                //$site = cursoemvideo
+                //$cursoemvideo = cursoPHP
+            */
+        }
+    }
+};
