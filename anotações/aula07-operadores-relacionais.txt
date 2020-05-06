@@ -1,0 +1,33 @@
+Operadores Relacionais{
+    maior $a > $b
+    menor $a < $b
+    maior ou igual $a >= $b
+    menor ou igual $a <= $b
+    diferente $a <> $b // $a != $b
+    igual $a == $b
+    identico $a === $b // testa se o conteudo da variável é identico(tipo + caractere)
+};
+
+Operador Unário{
+    expressao?verdadeiro:falso
+    example:{
+        $maior = $a > $b ? $a : $b
+        se $a for maior que $b, $maior recebe $a
+        se $a não for maior que $b, $maior recebe $b
+        /////
+        $r = $a > $b ? $a+$b : $a-$b
+        se $a for maior que $b, $r recebe a soma de $a e $b
+        se $a não for maior que $b, $r recebe a subtração de $a e $b
+        /////
+        $sit = $m < 7 ? "recuperação" : "aprovado"
+        se $m for menor que 7, $sit recebe "recuperação"
+        se $m for maior que 7, $site recebe "aprovado"
+    };
+};
+
+Operadores Lógicos{
+    and / &&
+    or / ||
+    xor // se os 2 forem verdadeiros ou falso, xor é FALSO. Resto é verdadeiro
+    ! // Não é Sim e Sim é Não
+}
