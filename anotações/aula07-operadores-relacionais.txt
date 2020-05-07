@@ -8,7 +8,7 @@ Operadores Relacionais{
     identico $a === $b // testa se o conteudo da variável é identico(tipo + caractere)
 };
 
-Operador Unário{
+Operador Ternário{
     expressao?verdadeiro:falso
     example:{
         $maior = $a > $b ? $a : $b

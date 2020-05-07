@@ -1,0 +1,34 @@
+Estrutura Condicional If{
+    example:{
+        if($a>$b){
+            $maior = $a;
+        }else{
+            $maior = $b;
+        }
+    }
+
+    Condição Composta Aninhada{
+        example:{
+            if($idade < 16){
+            $tipoVoto = "Não vota";
+            }else{
+                if(($idade >= 16 && $idade < 18) || ($idade > 65)){
+                $tipoVoto = "Voto opcional";
+                }else{
+                $tipoVoto = "Voto obrigatório";
+                }
+            }
+        }
+
+        //elseif{
+            if($idade < 16){
+                $tipoVoto = "Não vota";
+                }elseif(($idade >= 16 && $idade < 18) || ($idade > 65)){
+                    $tipoVoto = "Voto opcional";
+                }else{
+                    $tipoVoto = "Voto obrigatório";
+                }
+            }
+        }
+    }
+}

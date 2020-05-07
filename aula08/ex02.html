@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula08</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container">
+        <h1>Curso PHP #Aula08 - Interação HTML5 + PHP</h1>
+        <form action="ex02.php" method="GET">
+            Nome: <input type="text" name="nome" id=""><br>
+            Ano de nascimento: <input type="number" name="ano" id=""><br>
+            <fieldset>
+                <legend>Sexo</legend>
+                <input type="radio" checked name="sexo" id="masc" value="homem">
+                <label for="masc">Masculino</label><br>
+                <input type="radio" name="sexo" id="fem" value="mulher">
+                <label for="fem">Feminino</label><br>
+            </fieldset><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</body>
+</html>

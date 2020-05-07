@@ -1,0 +1,9 @@
+Integração HTML5 + PHP{
+
+    example:{
+        HTML5:                  PHP:
+        <form method="get">  /  $v = $_GET["n"]; #considerando nome do input "n" e variavel atribuida "$v"
+        <form method="post"> /  $v = $_POST["n"];
+
+    };
+};
