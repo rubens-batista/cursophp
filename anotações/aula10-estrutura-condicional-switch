@@ -1,0 +1,28 @@
+Estrutura Condicional Switch{
+    example:{
+        switch($op){
+            case 1:
+                echo "A";
+                break; // é essencial que tenha o BREAK, caso contrario vai dar error.
+            case 2:
+                echo "B";
+                #no ultimo case não precisa de um break
+            default // para opção invalida
+        }
+    }
+    Multiplos casos{
+        switch($op){
+            case 1:
+            case 2:
+            case 3:
+                echo "tipo 1";
+                break;
+            case 4:
+            case 5:
+                echo "tipo 2";
+                break;
+            default:
+                echo "tipo 3";
+        }
+    }
+}

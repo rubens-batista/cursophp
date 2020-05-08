@@ -20,11 +20,11 @@
             $media = number_format($m, 1);
             #Condicional
             if($m < 7 ){
-                echo "A média entre <span class='txt-red'>$num1</span> e <span class='txt-red'>$num2</span> é igual a <span class='txt-red'>$media</span><br>";
-                echo "Situação do aluno: <span class='txt-red'>REPROVADO</span>";
+                echo "A média entre <span class='foco'>$num1</span> e <span class='foco'>$num2</span> é igual a <span class='foco'>$media</span><br>";
+                echo "Situação do aluno: <span class='foco'>REPROVADO</span>";
             }else{
-                echo "A média entre <span class='txt-red'>$num1</span> e <span class='txt-red'>$num2</span> é igual a <span class='txt-red'>$media</span><br>";
-                echo "Situação do aluno: <span class='txt-red'>APROVADO</span>";
+                echo "A média entre <span class='foco'>$num1</span> e <span class='foco'>$num2</span> é igual a <span class='foco'>$media</span><br>";
+                echo "Situação do aluno: <span class='foco'>APROVADO</span>";
             };
         ?>
         <hr>

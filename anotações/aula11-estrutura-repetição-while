@@ -1,0 +1,20 @@
+Estrutura Repetição While{
+    Teste lógico no ínicio{
+        example:{
+            $c=1;
+            while($c <= 10){
+                echo $c;
+                $c++; // $c = $c + 1; // $c += 1;
+            }
+            <hr>
+            #Regressivo
+            $c=10;
+            while($c >= 1){
+                echo $c;
+                $c--; // $c = $c - 1; // $c -= 1;
+            }
+        }
+        #Sempre que o comando encontrar um 'break' ele vai sair da repetição.
+        $Se usar o 'continue'' ele vai voltar para o inicio.
+    }
+}
