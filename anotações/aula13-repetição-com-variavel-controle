@@ -1,0 +1,8 @@
+Estrutura Repetição com Váriavel de controle{
+    #Geralmente usado quando sabe o valor ínicial e final.
+    example:{
+        for($c=1; $c<=10; $c++){
+            echo $c;
+        };
+    }
+}
