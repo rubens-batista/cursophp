@@ -1,0 +1,35 @@
+Rotinas em PHP{
+    Passagem por valor{
+        exmaple:{
+            function teste($x){
+                $x += 2;
+                echo $x;
+            }
+            $a = 3;
+            teste($a);
+        }
+    }   
+    Passagem por referencia{
+        example:{
+            function teste(&$x){ // $x está como uma referencia da variavel $x
+                $x += 2;
+                echo $x;
+            }
+            $a = 3;
+            teste($a);
+        }
+    }
+    include{
+        example:{
+            include "funcoes.php";
+        }
+        include_once #Se eu ja carreguei, não precisa carregar mais, se eu não carreguei, carregue.
+        #caso n seja encontrado, o script continua
+    require{
+        example:{
+            require "funcoes.php";
+        }
+        #caso n seja encontrado, o script para
+        require_once
+    }
+}

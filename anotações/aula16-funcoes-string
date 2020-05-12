@@ -1,0 +1,87 @@
+Funções String{
+    printf{
+        $prod = "leite";
+        $preco = 4.5;
+        printf("O %s está custando R$ %2.f", $prod, $preco);
+        Tabela prinf{
+            %d // valor decimal(positivo ou negativo)
+            %u // Valor decimal sem sinal (positivo ou negativo)
+            %s // String
+            %f // Float
+        }
+    }
+    print_r{ #muito útil em periodo de teste
+        $v[0] = 4;
+        $v[1] = 8;
+        $v[2] = 3;
+        print_r($v);
+
+        var_dump($v);
+        var_export($v);
+    }
+    wordwrap{
+        #quebra de linha de texto
+        $t = "Aqui temos um texto gitante criado pelo php e vai mostrar o funcionamento da função wordwrap.";
+        $r = wordwrap($t, 5, "<br>\n", true ou false); // "<br>\n" = serve para ele quebrar tanto no código como visualmente.
+        #false gera quebra por palavra, se ela tiver menos valor de letras informado.
+        #true ele vai quebrar linha no valor informado, idependente da palavra.
+        echo $r;
+    }
+    strlen{
+        $txt = "Curo em Video";
+        $tamanho = strlen($txt);
+
+        resultado será 14 # por que o espaço faz parte da string
+    }
+    trim{
+        $nome = "   José da silva   ";
+        echo(strlen($nome));
+        $novo = trim($nome);
+        echo($novo);
+        echo(strlen($novo));
+
+        resultado 19 #Por causa dos espaço no inicio e no final
+        resultado José da silva
+        resultado 13 # por que os espaços do inicio e do final foram eliminados.
+
+        ltrim # elimina espaço do left ou seja do inicio
+        rtrim # elimina o espaço do right ou seja do fim
+    }
+    str_word_count{
+        $frase = "Eu vou estudar PHP";
+        $cont = str_word_count($frase, 0); # O valor 0 vai contar as palavras
+        #O valor 1 vai criar um vetor(array) com os valores dentro de cada posição.
+        #O valor 2 vetor mantendo posicionalmente de cada palavra dentro da string
+        echo $cont;
+    }
+    explode{ #pega cada palavra e joga dentro de um indice de um vetor.
+        $site = "Curso em video";
+        $vetor = explode(" ", $site);
+        print_r($vetor);
+    }
+    str_split{ #pega cada letra e joga dentro do indice
+        $nome = "Maria";
+        $vetor = str_split($nome);
+        print_r($vetor);
+    }
+    implode ou join{ #
+        $vetor[0] = "Curso";
+        $vetor[1] = "em";
+        $vetor[2] = "Video";
+        $texto = implode("#", $vetor)
+        print($texto);
+
+        resultado Curso#em#video
+    }
+    chr{ #ver a letra do código
+        $letra = chr(99);
+        echo "A letra de codigo 99 é $letra";
+    }
+    ord{ #ver a o código da letra
+        $letra = "C";
+        $cod = ord($letra);
+        print("A letra $letra, tem código $cod");
+
+        resultado = A letra C te código 67
+    }
+}
