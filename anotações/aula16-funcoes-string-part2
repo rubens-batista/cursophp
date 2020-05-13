@@ -1,0 +1,91 @@
+Funções String Part2{
+    strtolower{ #Tudo em minusculo
+        $nome = "Rubens Batista";
+        $nome2 = strtolower($nome);
+        print("Seu nome é $nome2");
+
+        resultado = rubens batista
+    }
+    strtoupper{ #Tudo em maiusculo
+        $nome = "Rubens Batista";
+        $nome2 = strtoupper($nome);
+        print("Seu nome é $nome2");
+
+        resultado = RUBENS BATISTA
+    }
+    ucfirst{ #primeira letra em maiuscula
+        $nome = "rubens batista";
+        $nome2 = ucfirst($nome);
+        print("Seu nome é $nome2");
+
+        resultado = Rubens batista
+    }
+    ucwords{ #primeira letra de cada palavra em maiuscula
+        $nome = "rubens batista";
+        $nome2 = ucwords($nome);
+        print("Seu nome é $nome2");
+
+        resultado = Rubens batista
+    }
+    strrev{
+        $nome = "rubens batista";
+        print(strrev($nome));
+        
+        resultado = snebur atsitab
+    }
+    strpos{ #verifica em qual posição uma determina substring se encontra em uma string maior.
+        $frase = "Estou aprendendo PHP";
+        $pos = strpos($frase, "PHP");
+        echo "A string foi encontrada na posição $pos";
+    }
+    stripos{ #verifica em qual posição uma determina substring se encontra em uma string maior. (ignorando a caixa)
+        $frase = "Estou aprendendo PHP";
+        $pos = strpos($frase, "PHP");
+        echo "A string foi encontrada na posição $pos";
+    }
+    substr_count{
+        $frase = "Estou aprendendo PHP no Curso em Vídeo de PHP";
+        $cont = substr_count($frase, "PHP");
+        print("PHP encontrado $cont vezes");
+
+        resultado = PHP encontrado 2 vezes
+    }
+    substr{ # pega a letra da posição indicada até a posição indicada
+        $site = "Curso em Vídeo";
+        $sub = substr($site, 0, 5);
+        print($sub);
+        print(substr($site, 9, 5));
+
+        resultado = Curso
+        resultado = Vídeo
+    }
+    str_pad{ #Faz com que o parametro indicado, caiba na quantidade de caractere indicada
+        $nome = "Rubens";
+        $novo = str_pad($nome, 30, " ", STR_PAD_RIGHT); // Complementa o resto das caracteres com espaços, pelo lado direito
+        print("Olá, Tudo bem? $novo");
+
+        resultado = Olá, Tudo bem? Rubensxxxxxxxxxxx // 'x' é apenas para representar espaços.
+            #STR_PAD_CENTER = xxxxxxRubensxxxxxxx // espaços antes e depois
+            #STR_PAD_LEFT = xxxxxxxRubens // Espaços para esquerda
+    }
+    str_repeat{ #Serve para repitir a string
+        $txt = str_repeat("Php", 5);
+        print("O texto gerado foi $txt");
+
+        resultado = PhpPhpPhpPhpPhp
+    }
+    str_replace{ #substitui palavra por palavra
+        $frase = "Gosto de estudar Matemática! Matemática é muito legal!";
+        $novaFrase = str_replace("Matemática", "PHP", $frase);
+        print($novaFrase);
+
+        resultado = Gosto de estudar PHP! PHP é muito legal!
+    }
+    str_ireplace{ #substitui palavra por palavra
+        $frase = "Gosto de estudar Matemática! Matemática é muito legal!";
+        $novaFrase = str_ireplace("matemática", "PHP", $frase);
+        print($novaFrase);
+
+        resultado = Gosto de estudar PHP! PHP é muito legal!
+    }
+}

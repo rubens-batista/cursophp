@@ -1,0 +1,66 @@
+Vetores e Matrizes{
+    Array{
+        example{
+        $n[0] = 3;
+        $n[1] = 5;
+        $n[2] = 8;
+        $n[3] = 2;
+        $n[4] = 7;
+        }
+        #pode tbm ser feito de outra maneira
+        example{
+            $n = array(3,5,8,2);
+            $n[] = 7; #cria uma posição dentro do vetor, na ultima posição
+
+        }
+        Range{ #cria valores, do inicio(5) ao fim(20) indicado, pulando do valor indicado(2)
+            example{
+                $c = range(5,20,2);
+                print_r($c);
+            }
+        }
+        foreach{
+            $c = range(5,20,2);
+            foreach($c as $valor){
+                echo "$valor";
+            }
+        }
+        Chaves Personalizadas{
+            $v = array(1=>"A", 3=>"B", 6=>"C", 8=>"D"); // Coloca os valores com posições personalizadas
+
+            example{
+                $v = array(
+                    3 => 5,
+                    1 => 9,
+                    0 => 8,
+                    7 => 7
+                );
+                unset($v[0]); // Retira um vetor na posição indicada
+                print_r($v);
+            }
+        }
+        Chaves Associativas{
+            example{
+                $v = array(
+                    "nome" => "Ana",
+                    "idade" => 23,
+                    "peso" => 65
+                );
+                $v["fuma"] = true;
+                //print_r($v);
+                foreach($v as $k => $c){
+                    echo "O campo $k possui conteudo $c<br>";
+                }
+            }
+        }
+    }
+    Matrizes{ #Array dentro de Array
+        $m = array(
+            array(6,4),
+            array(4,9),
+            array(3,2)
+        );
+        $m[0][1] = $m[2][0]; #substitui os valores dentro das linhas e colunas
+        print_r($m);
+    }
+}
