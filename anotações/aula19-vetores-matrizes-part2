@@ -1,0 +1,72 @@
+Vetores e Matrizes Parte 2{
+    Gerenciamento de Elementos no Vetor{
+        Exibir vetor na tela{
+        $v = array("A", "J", "M", "X", "K");
+                print_r($v); // Mostra somente as posições e seus elemetos
+                print("<hr>");
+                var_dump($v); // Mostra as posições, elementos, e tipos.
+        }
+        Contando items{
+            $v = array("A", "J", "M", "X", "K");
+            $tot = count($v); // conta quantos elementos tem
+            echo("O vetor tem $tot elementos ");
+        }
+        Adicionar elemento no final do vetor{
+            $v = array("A", "J", "M", "X", "K");
+            print_r($v);
+            $v[] = "O";
+            print_r($v);
+        }
+        eliminar elemento no final{
+            $v = array("A", "J", "M", "X", "K");
+            array_pop($v); // Elimina o ultimo elemento
+            print_r($v);
+            array_push($v, "O"); // Adiciona um elemento na ultima posição # Faz mesma coisa que o de baixo.
+            //$v[] = "O";
+            print_r($v);
+        }
+        adicionar e eliminar inicio do vetor{
+            $v = array("A", "J", "M", "X", "K");
+            array_unshift($v, "O"); // adiciona no inicio do vetor
+            print_r($v);
+            array_shift($v); // Elimina o primeiro elemento do vetor
+            print_r($v);
+        }
+        Colocar vetor em ordem{
+            $v = array("A", "J", "M", "X", "K");
+            print_r($v);
+            sort($v); // Coloca o vetor em ordem
+            print_r($v);
+        }
+        Ordem reversa{
+            $v = array("A", "J", "M", "X", "K");
+            print_r($v);
+            rsort($v); // Coloca o vetor em ordem reversa
+            print_r($v);
+        }
+        Ordenação Assosiativa{
+            $v = array("A", "J", "M", "X", "K");
+            print_r($v);
+            asort($v); // Ordenação Assosiativa, coloca os elementos em ordem, mantendo seus indices(key)
+            print_r($v);
+        }
+        Ordenação Assosiativa Reverso{
+            $v = array("A", "J", "M", "X", "K");
+            print_r($v);
+            arsort($v); // Ordenação Assosiativa Reversa, coloca os elementos em ordem, mantendo seus indices(key)
+            print_r($v);
+        }
+        Ordenando chaves(indices/key){
+            $v = array(2=>"A", 5=>"J", 0=>"M", 3=>"X", 4=>"K");
+            print_r($v);
+            ksort($v); // Coloca os indices em ordem
+            print_r($v);
+        }
+        Ordenando chaves reversa(indices/key){
+            $v = array(2=>"A", 5=>"J", 0=>"M", 3=>"X", 4=>"K");
+            print_r($v);
+            krsort($v); // Coloca os indices em ordem reversa
+            print_r($v);
+        }
+    }
+}
